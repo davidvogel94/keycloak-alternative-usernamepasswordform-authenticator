@@ -52,7 +52,7 @@ public class AlternativeUsernamePasswordForm extends UsernamePasswordForm implem
                     return;
                 }
                 
-                // Fallback to invalid user checks below if login failed
+                // If user didn't get credentials correct, we won't show them they're locked out so fall back to error below
             } 
 
             log.debug("Resetting the flow, all stops here.");
