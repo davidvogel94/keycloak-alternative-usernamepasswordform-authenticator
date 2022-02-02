@@ -2,10 +2,7 @@ forked from https://github.com/hatemzidi/keycloak-alternative-usernamepasswordfo
 
 # keycloak-usernamepasswordform-authenticator
 this custom authenticator implementation extends the original ``Username Password Form`` execuation flow in Keycloak.  
-It adds 'Alternative' to the original one and doesn't stop the execution flow if the user is not valid.
-
-It can be helpful in case of automatically redirecting to another provider if the user isn't valid in the default one.  
-If it's marked as 'Required', the extension will behave as the original one : stopping the flow and raising the error message. 
+It will inform the user if their account has been locked if they get the username/password correct, but will only provide the generic "incorrect user/password" message if not.
 
 # Deployment
 ```shell script
