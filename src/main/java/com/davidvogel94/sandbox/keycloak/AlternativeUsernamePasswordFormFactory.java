@@ -1,4 +1,4 @@
-package com.hatemzidi.sandbox.keycloak;
+package com.davidvogel94.sandbox.keycloak;
 
 import org.keycloak.authentication.Authenticator;
 import org.keycloak.authentication.AuthenticatorFactory;

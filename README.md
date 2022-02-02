@@ -1,3 +1,5 @@
+forked from https://github.com/hatemzidi/keycloak-alternative-usernamepasswordform-authenticator
+
 # keycloak-usernamepasswordform-authenticator
 this custom authenticator implementation extends the original ``Username Password Form`` execuation flow in Keycloak.  
 It adds 'Alternative' to the original one and doesn't stop the execution flow if the user is not valid.
