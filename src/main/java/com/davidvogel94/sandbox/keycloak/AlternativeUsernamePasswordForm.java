@@ -41,8 +41,8 @@ public class AlternativeUsernamePasswordForm extends UsernamePasswordForm implem
             log.debug("Oops! User is not valid : wrong credentials or unknown");
 
             UserModel user = getUser(context, formData);
-
-            if (!user.isEnabled()) {
+            
+            if (user != null && !user.isEnabled()) {
                 // Don't tell the user that they're disabled unless they got their password correct
                 if(validatePassword(context, user, formData, true)) {
                     log.debug("Login was successful, however user account is disabled.");
